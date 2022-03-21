@@ -38,7 +38,7 @@ function shortBreak() {
     reset();
     minutes = 10;
 
-    document.getElementById('break').innerHTML = 'SHORT BREAK';
+    document.getElementById('break').innerHTML = 'BREAK';
 
     document.getElementById('minutes').innerHTML = minutes + ':';
     document.getElementById('seconds').innerHTML = seconds + '0';

@@ -1,6 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
 .container {
     background: #ccc;
     height: 100vh;
+
     display: flex;
     justify-content:center;
     align-items: center;
@@ -10,11 +17,21 @@
 .timer {
    font-size: 6rem;
    color: red;
+   margin-bottom: 100px;
 }
+
+.break {
+    text-align: center;
+    color: blue;
+    font-size: 4rem;
+}
+
+
 
 button {
     height: 50px;
     width: 150px;
+ 
 }
 button.play {
     background-color: green;
@@ -32,9 +49,23 @@ button:hover {
     cursor: pointer;
 }
 
-.break {
-    
-    text-align: center;
-    color: blue;
-    font-size: 4rem;
+footer {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+
+    position: fixed;
+    bottom: 0;
+    background: rgb(112, 97, 97);
+    color: white;
+    height: 100px;
+    width: 100%;
+ 
+}
+footer span{
+    margin: 10px;
+}
+a {
+    color: rgb(0, 255, 115);
 }
