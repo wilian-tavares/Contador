@@ -9,6 +9,9 @@ let cron;
 let minuteFormat = (minutes < 10 ? '0' + minutes : minutes);
 let secondFormat = (seconds < 10 ? '0' + seconds : seconds);
 
+const audio = new Audio('alarme.wav');
+
+
 document.getElementById('minutes').innerHTML = minutes + ':';
 document.getElementById('seconds').innerHTML = seconds + '0';
 
@@ -81,6 +84,10 @@ function timer() {
             clearInterval(cron)
             document.getElementById('minutes').innerHTML = '00:';
             document.getElementById('seconds').innerHTML = '00';
+
+
+            audio.play()
+
         }
     }
 
